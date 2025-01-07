@@ -18,9 +18,6 @@ Libraries for node.js
 ### node_examples
 just some small examples  
 
-### soccer
-implementation of the soccer app
-
 # Create a node.js project
 ## Init the project
 Navigate to the folder where you want to create the project and create a new project with  
