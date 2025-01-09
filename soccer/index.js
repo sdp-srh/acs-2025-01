@@ -30,7 +30,7 @@ app.set('json spaces', 2);
 
 
 app.get('/', (req, res) => {
-  res.send('Soccer app is running')
+  res.send('<h1>Soccer app is running</h1>')
 })
 
 // gets all teams
