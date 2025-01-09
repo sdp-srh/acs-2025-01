@@ -1,0 +1,128 @@
+[
+    {
+      "teamName": "SC Freiburg",
+      "teamGroupName": null,
+      "teamId": 112,
+      "teamIconUrl": "https://i.imgur.com/r3mvi0h.png",
+      "shortName": "Freiburg"
+    },
+    {
+      "teamName": "SV Darmstadt 98",
+      "teamGroupName": null,
+      "teamId": 118,
+      "teamIconUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/SV_Darmstadt_98_Logo.svg",
+      "shortName": "Darmstadt"
+    },
+    {
+      "teamName": "VfL Bochum",
+      "teamGroupName": null,
+      "teamId": 129,
+      "teamIconUrl": "https://i.imgur.com/5jy3Gfr.png",
+      "shortName": "Bochum"
+    },
+    {
+      "teamName": "VfL Wolfsburg",
+      "teamGroupName": null,
+      "teamId": 131,
+      "teamIconUrl": "https://i.imgur.com/ucqKV4B.png",
+      "shortName": "Wolfsburg"
+    },
+    {
+      "teamName": "Werder Bremen",
+      "teamGroupName": null,
+      "teamId": 134,
+      "teamIconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/SV-Werder-Bremen-Logo.svg/681px-SV-Werder-Bremen-Logo.svg.png",
+      "shortName": "Bremen"
+    },
+    {
+      "teamName": "VfB Stuttgart",
+      "teamGroupName": null,
+      "teamId": 16,
+      "teamIconUrl": "https://i.imgur.com/v0tkpNx.png",
+      "shortName": "Stuttgart"
+    },
+    {
+      "teamName": "RB Leipzig",
+      "teamGroupName": null,
+      "teamId": 1635,
+      "teamIconUrl": "https://i.imgur.com/Rpwsjz1.png",
+      "shortName": "Leipzig"
+    },
+    {
+      "teamName": "TSG 1899 Hoffenheim",
+      "teamGroupName": null,
+      "teamId": 175,
+      "teamIconUrl": "https://i.imgur.com/gF0PfEl.png",
+      "shortName": "Hoffenheim"
+    },
+    {
+      "teamName": "1. FC Heidenheim 1846",
+      "teamGroupName": null,
+      "teamId": 199,
+      "teamIconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/1._FC_Heidenheim_1846.svg/830px-1._FC_Heidenheim_1846.svg.png",
+      "shortName": "Heidenheim"
+    },
+    {
+      "teamName": "FC Bayern München",
+      "teamGroupName": null,
+      "teamId": 40,
+      "teamIconUrl": "https://i.imgur.com/jJEsJrj.png",
+      "shortName": "Bayern"
+    },
+    {
+      "teamName": "Bayer Leverkusen",
+      "teamGroupName": null,
+      "teamId": 6,
+      "teamIconUrl": "https://upload.wikimedia.org/wikipedia/de/thumb/f/f7/Bayer_Leverkusen_Logo.svg/1200px-Bayer_Leverkusen_Logo.svg.png",
+      "shortName": "Leverkusen"
+    },
+    {
+      "teamName": "1. FC Köln",
+      "teamGroupName": null,
+      "teamId": 65,
+      "teamIconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/1._FC_Koeln_Logo_2014–.svg/296px-1._FC_Koeln_Logo_2014–.svg.png",
+      "shortName": "Köln"
+    },
+    {
+      "teamName": "Borussia Dortmund",
+      "teamGroupName": null,
+      "teamId": 7,
+      "teamIconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Borussia_Dortmund_logo.svg/560px-Borussia_Dortmund_logo.svg.png",
+      "shortName": "BVB"
+    },
+    {
+      "teamName": "1. FC Union Berlin",
+      "teamGroupName": null,
+      "teamId": 80,
+      "teamIconUrl": "https://assets.dfb.de/uploads/000/018/232/small_union-Berlin.jpg",
+      "shortName": "Union Berlin"
+    },
+    {
+      "teamName": "1. FSV Mainz 05",
+      "teamGroupName": null,
+      "teamId": 81,
+      "teamIconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Logo_Mainz_05.svg/1200px-Logo_Mainz_05.svg.png",
+      "shortName": "Mainz"
+    },
+    {
+      "teamName": "Borussia Mönchengladbach",
+      "teamGroupName": null,
+      "teamId": 87,
+      "teamIconUrl": "https://i.imgur.com/KSIk0Eu.png",
+      "shortName": "Gladbach"
+    },
+    {
+      "teamName": "Eintracht Frankfurt",
+      "teamGroupName": null,
+      "teamId": 91,
+      "teamIconUrl": "https://i.imgur.com/X8NFkOb.png",
+      "shortName": "Frankfurt"
+    },
+    {
+      "teamName": "FC Augsburg",
+      "teamGroupName": null,
+      "teamId": 95,
+      "teamIconUrl": "https://i.imgur.com/sdE62e2.png",
+      "shortName": "Augsburg"
+    }
+  ]
