@@ -8,7 +8,7 @@ POST {{server}}/api/de2en
 Content-Type: application/json
 
   {
-    "source": "Wie wird das Wetter morgen abend?"
+    "source": "Wie wird das Wetter Morgen abend?"
   }
 
 
