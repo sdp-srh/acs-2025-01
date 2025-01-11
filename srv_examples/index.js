@@ -5,8 +5,17 @@ const path = require('path')
 // translation API
 const { Translate } = require('@google-cloud/translate').v2
 
-// Vertext AI
-const { VertexAI } = require('@google-cloud/vertexai')
+// Vertext AI and it's configuration
+const {
+  HarmBlockThreshold,
+  HarmCategory,
+  VertexAI
+} = require('@google-cloud/vertexai')
+const project = 'acs-2023-02'
+const location = 'us-central1'
+const textModel =  'gemini-1.0-pro'
+const vertexAI = new VertexAI({project: project, location: location})
+
 
 // use winston as logger
 const winston = require('winston');
@@ -83,18 +92,21 @@ app.get('/test/logerror', async (req, res) => {
 
 app.post('/api/gemini', async (req, res) => {
   // setup the vertex ai client
-  const vertex_ai = new VertexAI({project: 'acs-2023-02', location: 'us-central1'})
+  
 
   // get the prompt from the frontend request
   const prompt = req.body.prompt
-  // configure and get the generative model
-  const generativeModel = vertex_ai.preview.getGenerativeModel({
-    model: 'gemini-pro',
-    generation_config: {
-      'maxOutputTokens': 2048,
-      'temperature': 0.9,
-      'topP': 1,
-      'candidateCount': 1
+
+  // define the generative model and pass the textModel
+  const generativeModel = vertexAI.getGenerativeModel({
+    model: textModel,
+    // The following parameters are optional
+    // They can also be passed to individual content generation requests
+    safetySettings: [{category: HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE}],
+    generationConfig: {maxOutputTokens: 2048},
+    systemInstruction: {
+      role: 'system',
+      parts: [{"text": `For example, you are a helpful customer service agent.`}]
     }
   })
   // define the aiRequest, which will be send to the generative model
