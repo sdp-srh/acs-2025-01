@@ -101,12 +101,11 @@ app.post('/api/gemini', async (req, res) => {
   const generativeModel = vertexAI.getGenerativeModel({
     model: textModel,
     // The following parameters are optional
-    // They can also be passed to individual content generation requests
     safetySettings: [{category: HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE}],
     generationConfig: {maxOutputTokens: 2048},
     systemInstruction: {
       role: 'system',
-      parts: [{"text": `For example, you are a helpful customer service agent.`}]
+      parts: [{"text": `For example, you are a helpful and creative chatbot.`}]
     }
   })
   // define the aiRequest, which will be send to the generative model
