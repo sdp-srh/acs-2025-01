@@ -3,20 +3,10 @@
 
 
 ### test the app
-GET {{server}}/api/
-
-### test the app
-GET {{server}}/api/info
+GET {{server}}/
 
 ### read all teams
 GET {{server}}/api/team
-
-### read all teams
-GET {{server}}/api/dummyteams
-
-
-### read all teams
-GET {{server}}/api/status
 
 ### read a specific team
 GET {{server}}/api/team/25ae03be-8b74-4443-9b3c-71737566c567
@@ -24,8 +14,14 @@ GET {{server}}/api/team/25ae03be-8b74-4443-9b3c-71737566c567
 ### read all matches
 GET {{server}}/api/match
 
-### read all matches
+### read ranking
 GET {{server}}/api/ranking
+
+
+### read status
+GET {{server}}/api/status
+
+
 
 ### read all match with id
 GET {{server}}/api/match/{{newmatchid}}
@@ -66,16 +62,18 @@ Content-Type: application/json
 ### delete match with id
 DELETE {{server}}/api/match/{{newmatchid}}
 
+### get of root
+GET {{server}}/
 
 ### options of root
-OPTIONS {{server}}/api/
+OPTIONS {{server}}/
 
 ### Head of root
-HEAD {{server}}/api/
+HEAD {{server}}/
 
 
 ### GET of root
-GET {{server}}/api/
+GET {{server}}/
 
 ### options of match endpoint
 OPTIONS {{server}}/api/match/
@@ -91,7 +89,3 @@ GET {{server}}/api/findmatches?term=eintracht
 
 ### find matchew with id
 GET {{server}}/api/findteams?term=frank
-
-
-### get profile
-GET {{server}}/api/profile
