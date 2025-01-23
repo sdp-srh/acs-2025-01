@@ -1,0 +1,19 @@
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+input {
+  margin: 10px;
+  padding: 8px;
+  width: 200px;
+}
+
+button {
+  margin: 10px;
+  padding: 8px;
+  cursor: pointer;
+}

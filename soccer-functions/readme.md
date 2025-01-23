@@ -13,7 +13,7 @@ functions.http('my-cloud-function', async (req, res) => {
 ```
 
 # Deployment
-gcloud functions deploy my-cloud-function --runtime nodejs20 --trigger-http --region europe-west3
+gcloud functions deploy load-openliga-data --runtime nodejs20 --trigger-http --region europe-west3
 
 # Test locally
 npx functions-framework --source=. --target=load-openliga-data

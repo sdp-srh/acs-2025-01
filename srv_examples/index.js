@@ -5,6 +5,10 @@ const path = require('path')
 // translation API
 const { Translate } = require('@google-cloud/translate').v2
 
+
+// big query api
+const { BigQuery } = require('@google-cloud/bigquery');
+
 // Vertext AI and it's configuration
 const {
   HarmBlockThreshold,
@@ -125,6 +129,42 @@ app.post('/api/gemini', async (req, res) => {
 });
 
 
+// big data query endpoint
+app.get('/api/google-trends', async (req, res) => {
+  const trends = await readTrends()
+  logger.info(`Trends found : ${trends.length}`)
+  console.log(trends)
+  res.send({ amount: trends.length, results: trends})
+})
+
+
+// reads the news from the big query service
+
+const readTrends = async () => {
+  const bigquery = new BigQuery()
+  
+  const statement = `
+  -- This query shows a list of the daily top Google Search terms.
+  SELECT
+     refresh_date AS Day,
+     term AS Top_Term,
+         -- These search terms are in the top 25 in the US each day.
+     rank,
+  FROM bigquery-public-data.google_trends.top_terms
+  WHERE
+     rank = 1
+         -- Choose only the top term each day.
+     AND refresh_date >= DATE_SUB(CURRENT_DATE(), INTERVAL 2 WEEK)
+         -- Filter to the last 2 weeks.
+  GROUP BY Day, Top_Term, rank
+  ORDER BY Day DESC
+     -- Show the days in reverse chronological order.
+  
+  `
+  // call the data with the query statement
+  const [rows] = await bigquery.query({query: statement})
+  return rows;
+}
 
 app.listen(port, async () => {
   logger.info(`test service is running on ${port}`)
